@@ -49,7 +49,7 @@ public class UserParam extends CoreParam {
 	}
 }
 ```
-该模版能接收的数据类型:
+该模版能接收的数据类型 application/json :
 ```JSON
 {
   "user" : {
@@ -61,3 +61,68 @@ public class UserParam extends CoreParam {
 使用注意事项:
 - 一般情况下, 尽量每一个 Controller 类对应一个 Param, 如 UserController 对应一个 UserParam 类. 接收所有来自该 Controller 的请求数据.
 - 模版中仅示例接收一个 user 对象, 需要接收其它请求请自行声明并添加对应的 Getter 和 Setter.
+
+### ResultMessage
+响应统一的结果消息 (无结果数据):
+```JSON
+{
+  "serviceResult": 1,
+  "resultInfo": "添加成功",
+  "resultParm": null
+}
+```
+- `serviceResult` : 结果码.
+- `resultInfo` : 结果信息.
+- `resultParm` : 结果数据, 没有结果数据时则为`null`, 数据格式统一为 `Map` 类型, 其中的`value` 可为任意类型 (Object).
+
+响应统一的结果消息 (有结果数据):
+```JSON
+{
+  "serviceResult": 1,
+  "resultInfo": "获取成功",
+  "resultParm": {
+    "userList": [
+      {
+        "userid" : 1,
+        "username" : "l-kaxy"
+      },
+      {
+        "userid" : 2,
+        "username" : "Jason"
+      }
+    ],
+    "user" : {
+      "userid" : 1,
+      "username" : "l-kaxy"
+    },
+    "username" : "l-kaxy"
+  }
+}
+```
+以上例子展示了三种结果类型, 集合类型 `userList`,普通对象类型 `user` 和字符串类型 `username`.
+
+## Service 层
+// TODO
+
+## Repository 层
+// TODO
+
+## 持久化实体
+// TODO
+
+## License
+```
+Copyright 2018 L-kaxy
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
