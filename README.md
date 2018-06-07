@@ -20,7 +20,7 @@ public class UserController {
 	public ResultMessage addUser(@RequestBody UserParam param) throws Exception {
 		return service.addUser(param.getUser());
 	}
-  
+
 }
 ```
 使用注意事项:
@@ -50,30 +50,14 @@ public class UserParam extends CoreParam {
 }
 ```
 该模版能接收的数据类型:
-```java
+```JSON
 {
-	user : {
-   		username : ""
-   }
+  "user" : {
+    "username" : "l-kaxy"
+  }
 }
 ```
 
 使用注意事项:
 - 一般情况下, 尽量每一个 Controller 类对应一个 Param, 如 UserController 对应一个 UserParam 类. 接收所有来自该 Controller 的请求数据.
 - 模版中仅示例接收一个 user 对象, 需要接收其它请求请自行声明并添加对应的 Getter 和 Setter.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
