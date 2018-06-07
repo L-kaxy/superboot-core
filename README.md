@@ -8,16 +8,18 @@ superboot-core 是 superboot 框架系列的核心框架.
 ## Controller 层
 控制层使用的是 SpringMVC, 为了规范开发, 所有接口请求方式都使用 POST, contentType 均为 application/json.
 
-    @RestController
+
+	@RestController
 	public class UserController {
 
 		@Autowired
 		private UserService service;
-	
+
 		@PostMapping("/addUser")
 		public ResultMessage addUser(@RequestBody Param param) throws Exception {
 			UserPo userPo = param.getUser().voToPo(UserPo.class);
 			return service.addUser(userPo);
 		}
-  
+
 	}
+
