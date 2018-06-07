@@ -1,14 +1,17 @@
-spring: 
+spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/superboot-security
+    url: jdbc:mysql://127.0.0.1:3306/superboot
     username: root
     password: LkjmN123456
   jpa:
     hibernate:
       ddl-auto: none
-    show-sql: true
-  http: 
-    multipart: 
+    show-sql: false
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  http:
+    multipart:
       maxFileSize: 10Mb
       maxRequestSize: 10Mb

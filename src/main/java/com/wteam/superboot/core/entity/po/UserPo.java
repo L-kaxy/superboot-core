@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2007-2017 Wteam.  All rights reserved. 网维网络技术创业团队 版权所有.
+ * Copyright (c) 2017-2018 Tianxin.  All rights reserved. 广州天新网络科技有限公司 版权所有.
  * 请勿修改或删除版权声明及文件头部.
  */
 package com.wteam.superboot.core.entity.po;
@@ -17,7 +17,7 @@ import javax.persistence.Table;
  * 用户持久层类.
  * 
  * @author 罗佳欣
- * @version 1.0.0
+ * @version 1.2.0
  */
 @Entity
 @Table(name = "t_user")
@@ -38,32 +38,36 @@ public class UserPo extends BasePersistentObject {
 	private String username;
 
 	/**
-	 * @return the userkeyid
+	 * @return 获取 userid 的值.
 	 */
-	public final Long getUserid() {
+	public Long getUserid() {
 		return userid;
 	}
 
 	/**
+	 * 设置 userid 的值.
+	 *
 	 * @param userid
-	 *            the userid to set
+	 *            赋值给 userid.
 	 */
-	public final void setUserid(Long userid) {
+	public void setUserid(Long userid) {
 		this.userid = userid;
 	}
 
 	/**
-	 * @return the username
+	 * @return 获取 username 的值.
 	 */
-	public final String getUsername() {
+	public String getUsername() {
 		return username;
 	}
 
 	/**
+	 * 设置 username 的值.
+	 *
 	 * @param username
-	 *            the username to set
+	 *            赋值给 username.
 	 */
-	public final void setUsername(String username) {
+	public void setUsername(String username) {
 		this.username = username;
 	}
 
