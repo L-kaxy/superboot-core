@@ -21,7 +21,7 @@ import com.wteam.superboot.core.result.ResultMessage;
 /**
  * http请求切面日志打印.
  * 
- * 仅作为参考, 如需使用务必将这两个注解写到类注解上: {@Aspect,@Component}
+ * 仅作为参考, 如需使用务必将这两个注解写到类注解上: Aspect,Component
  * 
  * @author 罗佳欣
  * @version 1.2.0

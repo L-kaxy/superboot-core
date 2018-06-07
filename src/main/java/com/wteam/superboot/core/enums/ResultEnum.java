@@ -75,7 +75,7 @@ public enum ResultEnum implements Resultinfo {
 	/**
 	 * 重写 getServiceResult
 	 * 
-	 * @see {@link Resultinfo#getServiceResult()}.
+	 * {@link Resultinfo#getServiceResult()}.
 	 */
 	@Override
 	public Integer getServiceResult() {
@@ -85,7 +85,7 @@ public enum ResultEnum implements Resultinfo {
 	/**
 	 * 重写 getResultInfo
 	 * 
-	 * @see {@link Resultinfo#getResultInfo()}.
+	 * {@link Resultinfo#getResultInfo()}.
 	 */
 	@Override
 	public String getResultInfo() {

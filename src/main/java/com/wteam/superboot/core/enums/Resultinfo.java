@@ -7,7 +7,7 @@ package com.wteam.superboot.core.enums;
 /**
  * 结果消息枚举接口.
  * 
- * @see {@link com.wteam.superboot.core.exception.SuperException}
+ * {@link com.wteam.superboot.core.exception.SuperException}
  * 
  * @author 罗佳欣
  * @version 1.2.0

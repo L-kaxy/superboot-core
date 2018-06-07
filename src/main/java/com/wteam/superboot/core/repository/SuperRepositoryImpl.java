@@ -59,6 +59,11 @@ public final class SuperRepositoryImpl<T extends BasePersistentObject, ID extend
 
 	/**
 	 * 超级Repository实现类构造方法.
+	 * 
+	 * @param domainClass
+	 *            实体类类型.
+	 * @param em
+	 *            持久化实体管理器.
 	 */
 	public SuperRepositoryImpl(Class<T> domainClass, EntityManager em) {
 		super(domainClass, em);
