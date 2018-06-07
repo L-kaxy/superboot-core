@@ -8,6 +8,7 @@ superboot-core 是 superboot 框架系列的核心框架.
 ## Controller 层
 控制层使用的是 SpringMVC, 为了规范开发, 所有接口请求方式都使用 POST, contentType 均为 application/json.
 
+以下为 Controller 类的一个模版:
 
 	@RestController
 	public class UserController {
@@ -22,4 +23,26 @@ superboot-core 是 superboot 框架系列的核心框架.
 		}
 
 	}
+
+使用注意事项:
+
+Controller 类均声明 @RestController 注解, 默认使用 JSON 请求以及返回数据.
+
+一个 Controller 编写的是某一小模块的所有接口. 如用户模块: addUser, getUser, getUserList, removeUser等.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
