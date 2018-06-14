@@ -17,13 +17,6 @@ SuperBoot 是一个后台开发框架。它能帮你更轻松的编写 Web Api�
 - [开始使用 SuperBoot](https://github.com/L-kaxy/superboot-core/wiki/快速上手)
 - [详细了解 SuperBoot 开发步骤](https://github.com/L-kaxy/superboot-core/wiki/快速上手)
 
-## 假设
-本文档假设你已经熟悉了 SpringMVC、SpringData 和 Java 后台开发的一些基础知识。
-
-## 反馈
-你也可以和我一起做贡献！
-你可以到 SuperBoot 在 Github 上的仓库中提出文档方面和框架功能拓展的问题。
-
 ## License
 ```
 Copyright 2018 L-kaxy
