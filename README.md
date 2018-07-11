@@ -13,7 +13,7 @@ SuperBoot 是一个后台开发框架。它能帮你更轻松的编写 Web Api�
 该框架的目的是为了让程序员花最少的时间，用更少而更规范的代码，快速地写出更少bug的后台接口。
 
 ## 传送门
-- 快速体验使用 SuperBoot 的 Demo： [SuperBoot - Admin](http://119.29.131.183/superboot/) 。该 Demo 前端部分使用了 Angular5 和基于 Angular 的管理模版 [ngx-admin](https://github.com/akveo/ngx-admin)，请使用帐号：sysadmin 和密码：123456 登录管理端体验。
+- 快速体验使用 SuperBoot 的 Demo： [SuperBoot - Admin](https://www.l-kaxy.cn/static/superboot/#/login) 。该 Demo 前端部分使用了 Angular5 和基于 Angular 的管理模版 [ngx-admin](https://github.com/akveo/ngx-admin)，请使用帐号：sysadmin 和密码：123456 登录管理端体验。
 - [使用文档](https://github.com/L-kaxy/superboot-core/wiki)
 
 ## License
